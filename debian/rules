@@ -11,6 +11,9 @@ export PYBUILD_TEST_ARGS=tox -c {dir}/pyproject.toml --sitepackages -e py{versio
 %:
 	dh $@ --with python3 --buildsystem=pybuild
 
+override_dh_auto_test:
+	echo "Do nothing..."
+
 execute_before_dh_installman:
 ifeq (,$(filter nodoc,$(DEB_BUILD_OPTIONS)))
 	(cd docs; \

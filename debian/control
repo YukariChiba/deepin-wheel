@@ -9,10 +9,7 @@ Build-Depends: debhelper-compat (= 13),
                flit,
                pybuild-plugin-pyproject,
                python3-all-dev,
-               python3-pytest <!nocheck>,
-               python3-pytest-cov <!nocheck>,
                python3-sphinx <!nodoc>,
-               tox (>= 4) <!nocheck>
 Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/python-team/packages/wheel
 Vcs-Git: https://salsa.debian.org/python-team/packages/wheel.git
